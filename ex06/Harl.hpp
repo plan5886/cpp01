@@ -6,7 +6,7 @@
 /*   By: mypark <mypark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 12:13:11 by mypark            #+#    #+#             */
-/*   Updated: 2022/05/21 15:05:03 by mypark           ###   ########.fr       */
+/*   Updated: 2022/05/22 09:29:12 by mypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,5 +29,7 @@ class Harl {
   ~Harl();
   void complain(std::string level);
 };
+
+enum ProblemLevel { NONE, DEBUG, INFO, WARNING, ERROR };
 
 #endif  // Harl_HPP

@@ -6,11 +6,11 @@
 #    By: mypark <mypark@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 11:02:36 by mypark            #+#    #+#              #
-#    Updated: 2022/05/21 15:08:11 by mypark           ###   ########.fr        #
+#    Updated: 2022/05/22 09:35:37 by mypark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	ex05.out
+NAME			=	harlFilter
 CXXFLAGS	=	-std=c++98 -pedantic -Wall -Werror -Wextra
 LDFLAGS 	= -std=c++98 -pedantic -Wall -Werror -Wextra
 SRCS	=	main.cpp\
