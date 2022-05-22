@@ -6,7 +6,7 @@
 /*   By: mypark <mypark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 10:43:55 by mypark            #+#    #+#             */
-/*   Updated: 2022/05/20 13:29:57 by mypark           ###   ########.fr       */
+/*   Updated: 2022/05/22 10:54:40 by mypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int main() {
   }
   {
     Weapon club = Weapon("crude spiked club");
-    HumanB jim("Jim");
+    HumanB jim("jim");
     jim.setWeapon(club);
     jim.Attack();
     club.setType("some other type of club");
