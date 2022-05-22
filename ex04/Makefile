@@ -6,12 +6,11 @@
 #    By: mypark <mypark@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 11:02:36 by mypark            #+#    #+#              #
-#    Updated: 2022/05/20 17:08:49 by mypark           ###   ########.fr        #
+#    Updated: 2022/05/22 09:54:14 by mypark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME			=	ex04.out
-TESTFILE	=	test
 CXXFLAGS	=	-std=c++98 -pedantic -Wall -Werror -Wextra
 LDFLAGS 	= -std=c++98 -pedantic -Wall -Werror -Wextra
 SRCS	=	main.cpp
@@ -42,7 +41,7 @@ fclean:
 	rm -f $(NAME)
 	rm -f $(NAME)_leak
 	rm -f $(NAME)_address
-	rm -f $(TESTFILE).replace
+	rm -f *.replace
 	rm -rf $(NAME)_leak.dSYM
 
 re:

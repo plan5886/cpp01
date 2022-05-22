@@ -6,7 +6,7 @@
 /*   By: mypark <mypark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/20 17:03:33 by mypark            #+#    #+#             */
-/*   Updated: 2022/05/20 17:20:11 by mypark           ###   ########.fr       */
+/*   Updated: 2022/05/22 10:03:08 by mypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ void open_files(std::string filename, std::ifstream& ifs, std::ofstream& ofs) {
 void ifs_to_ss(std::ifstream& ifs, std::stringstream& ss) {
   std::string input;
 
-  std::getline(ifs, input);
   while (1) {
+    std::getline(ifs, input);
     ss << input;
-    if (!std::getline(ifs, input))
+    if (ifs.eof())
       break;
     ss << '\n';
   }
@@ -57,7 +57,7 @@ void write_content(std::ofstream& ofs, std::stringstream& ss, char** argv) {
     ofs << front << replaced;
     found = content.find(target);
   }
-  ofs << content << std::endl;
+  ofs << content;
 }
 
 }  // namespace ex04
