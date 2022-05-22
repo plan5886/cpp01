@@ -6,11 +6,11 @@
 #    By: mypark <mypark@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/05/18 11:02:36 by mypark            #+#    #+#              #
-#    Updated: 2022/05/19 20:18:51 by mypark           ###   ########.fr        #
+#    Updated: 2022/05/22 10:09:33 by mypark           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME			=	Zombie
+NAME			=	Zombie_ex00
 CXXFLAGS	=	-Wall -Werror -Wextra -std=c++98 -pedantic
 LDFLAGS 	= -Wall -Werror -Wextra -std=c++98 -pedantic
 SRCS	=	main.cpp\
