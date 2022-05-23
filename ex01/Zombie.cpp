@@ -6,21 +6,25 @@
 /*   By: mypark <mypark@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 19:00:48 by mypark            #+#    #+#             */
-/*   Updated: 2022/05/20 09:36:18 by mypark           ###   ########.fr       */
+/*   Updated: 2022/05/23 09:30:26 by mypark           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-#include <limits.h>
+#include <sstream>
 
 int Zombie::counts_;
 
 Zombie::Zombie() {
-  std::string name;
+  std::string       name;
+  std::string       counts_str;
+  std::stringstream ss;
 
   name = "Zombie";
-  name_ = name.append(std::to_string(counts_));
+  ss << counts_ << ' ';
+  ss >> counts_str;
+  name_ = name + counts_str;
   counts_++;
   std::cout << name_ << ": "
             << "Kwaaaaaaaaaaaaa!!!" << std::endl;
